@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulawayo Bites</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>🍽️ Bulawayo Bites</h1>
+    <nav>
+      <a href="index.html" class="active">Menu</a>
+      <a href="orders.html">My Orders</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hot food, delivered fast</h2>
+    <p>Order your favourites in a few clicks.</p>
+  </section>
+
+  <main class="container">
+    <input type="text" id="search" placeholder="Search the menu...">
+
+    <div class="filters">
+      <button data-category="all" class="active">All</button>
+      <button data-category="meals">Meals</button>
+      <button data-category="snacks">Snacks</button>
+      <button data-category="drinks">Drinks</button>
+    </div>
+
+    <div id="menu" class="menu-grid"></div>
+  </main>
+
+  <div id="toast"></div>
+
+  <footer><p>&copy; 2026 Bulawayo Bites</p></footer>
+
+  <script src="js/cart.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
